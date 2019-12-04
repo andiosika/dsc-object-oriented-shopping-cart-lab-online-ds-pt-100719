@@ -36,7 +36,7 @@ class ShoppingCart:
           discount = self.employee_discout/100
           disc_total = self.total * (1 - discount)
           return disc_total
-        else:
+       else:
           return "Sory, there is no discount to apply to your cart"
 
     def void_last_item(self):
@@ -45,3 +45,4 @@ class ShoppingCart:
         else:
           return "There is no items in your cart!"
         self.total -= reoved_item['price']
+        
